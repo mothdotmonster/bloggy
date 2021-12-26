@@ -1,7 +1,8 @@
+# This sample Caddyfile will run the server on localhost.
 localhost {
 	templates
 	encode zstd gzip
-	root * /path/to/bloggy # Change this
+	root * ./
 	file_server
 	rewrite /blog/* blog.html
 	handle_errors {
