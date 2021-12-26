@@ -1,0 +1,28 @@
+{{$siteName := (include "/siteName")}}
+{{$pathParts := splitList "/" .OriginalReq.URL.Path}}
+{{$markdownFilename := default "index" (slice $pathParts 2 | join "/")}}
+{{$markdownFilePath := printf "/markdown/%s.md" $markdownFilename}}
+{{if not (fileExists $markdownFilePath)}}{{httpError 404}}{{end}}
+{{$markdownFile := (include $markdownFilePath | splitFrontMatter)}}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{$markdownFilename}} - {{$siteName}}</title>
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+		<div class="outer">
+			<div class="inner">
+				<article>
+					{{markdown $markdownFile.Body}}
+				</article>
+				<hr>
+				<p class="footer">
+					<a href="/index.html">back to index</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,10 @@
+localhost {
+	templates
+	encode zstd gzip
+	root * /path/to/bloggy # Change this
+	file_server
+	rewrite /blog/* blog.html
+	handle_errors {
+		respond "{http.error.status_code} {http.error.status_text}"
+	}
+}
