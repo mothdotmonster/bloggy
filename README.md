@@ -1,7 +1,7 @@
 # bloggy
 a minimalist Markdown site maker for Caddy
 
-live demo
+[live demo](https://bloggy.moth.monster/)
 
 try it locally:
 
