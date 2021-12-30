@@ -1,6 +1,7 @@
 {{$siteName := (include "/siteName")}}
 {{$files := (listFiles "/markdown")}}
 {{$length := (len $files)}}
+{{$markdownFile := (include "/index.md" | splitFrontMatter)}}
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,8 +12,7 @@
 	<body>
 		<div class="outer">
 			<div class="inner">
-				<h1>Welcome to {{$siteName}}!</h1>
-				<hr>
+				{{markdown $markdownFile.Body}}
 				{{range $files}}
 					<p>
 						<a href="/blog/{{trimSuffix ".md" (first $files)}}">{{trimSuffix ".md" (first $files)}}</a>

@@ -2,7 +2,7 @@
 localhost {
 	templates
 	encode zstd gzip
-	root * ./
+	root * ./ # Edit me!
 	file_server
 	rewrite /blog/* blog.html
 	handle_errors {
