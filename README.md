@@ -1,6 +1,8 @@
 # bloggy
 a minimalist Markdown site maker for Caddy
 
+![image](https://moth.monster/projects/bloggy/bloggy.png)
+
 [live demo](https://bloggy.moth.monster/)
 
 try it locally:
