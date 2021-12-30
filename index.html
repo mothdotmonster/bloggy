@@ -13,12 +13,6 @@
 		<div class="outer">
 			<div class="inner">
 				{{markdown $markdownFile.Body}}
-				{{range $files}}
-					<p>
-						<a href="/blog/{{trimSuffix ".md" (first $files)}}">{{trimSuffix ".md" (first $files)}}</a>
-					</p>
-					{{$files = (rest $files)}}
-				{{end}}
 			</div>
 		</div>
 	</body>
