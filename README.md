@@ -1,14 +1,3 @@
-# bloggy
-a minimalist Markdown site maker for Caddy
+This is the source for the documentation for Bloggy.
 
-![image](https://moth.monster/projects/bloggy/bloggy.png)
-
-[live demo](https://bloggy.moth.monster/)
-
-try it locally:
-
-```
-git clone https://github.com/mothdotmonster/bloggy/ bloggy
-cd bloggy
-sudo caddy run
-```
+If you just want to read the documentation, go [here.](https://bloggy.moth.monster)
