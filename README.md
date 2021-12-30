@@ -3,7 +3,7 @@ a minimalist Markdown site maker for Caddy
 
 ![image](https://moth.monster/projects/bloggy/bloggy.png)
 
-[documentation](https://bloggy.moth.monster/)
+[docs](https://bloggy.moth.monster/)
 
 try it locally:
 
