@@ -5,6 +5,26 @@
 	--bg: white;
 	--shadow: grey;
 }
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--fg: black;
+		--light: blue;
+		--dark: purple;
+		--bg: white;
+		--shadow: grey;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--fg: white;
+		--light: blue;
+		--dark: purple;
+		--bg: black;
+		--shadow: grey;
+	}
+}
+
 * {
 	color: var(--fg);
 	background-color: var(--bg);
