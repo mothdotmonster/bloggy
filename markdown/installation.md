@@ -1,3 +1,7 @@
++++
+title = "Installation - Bloggy Docs"
++++
+
 # Installation
 
 ***
@@ -17,7 +21,7 @@ cd bloggy
 
 If you want to simply try out Bloggy, you can use the given Caddyfile to test it out.
 
-`sudo caddy run`
+`caddy run`
 
 ***
 

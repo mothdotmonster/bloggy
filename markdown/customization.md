@@ -1,8 +1,14 @@
++++
+title = "Customization - Bloggy Docs"
++++
+
 # Customization
 
 ***
 
-For basic customization, all you need to do is edit some Markdown using your favorite text editor. To customize the index page, edit `index.md`
+For basic customization, all you need to do is edit some Markdown using your favorite text editor.
+
+To customize the index page, edit `index.md`.
 
 To add a new post, create a `.md` file in the `markdown` folder. It will automatically be added to the listing on the index page.
 
