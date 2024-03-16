@@ -1,24 +1,15 @@
-{{$siteName := (include "/siteName")}}
-{{$files := (listFiles "/markdown")}}
-{{$length := (len $files)}}
-{{$markdownFile := (include "/index.md" | splitFrontMatter)}}
+{{$md := (include "/index.md" | splitFrontMatter)}}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{$siteName}}</title>
+		<title>{{$md.Meta.title}}</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div class="outer">
 			<div class="inner">
-				{{markdown $markdownFile.Body}}
-				{{range $files}}
-					<p>
-						<a href="/blog/{{trimSuffix ".md" (first $files)}}">{{trimSuffix ".md" (first $files)}}</a>
-					</p>
-					{{$files = (rest $files)}}
-				{{end}}
+				{{markdown $md.Body}}
 			</div>
 		</div>
 	</body>

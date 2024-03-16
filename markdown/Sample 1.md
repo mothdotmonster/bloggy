@@ -1,3 +1,7 @@
++++
+title = "Sample 1 - Bloggy"
++++
+
 # Sample 1
 ---
 This is a sample file.
@@ -7,6 +11,13 @@ This is a sample file.
 **Strong text**
 
 `Code`
+
+```
+This is a code block.
+
+10 PRINT "HELLO WORLD"
+20 GOTO 10
+```
 
 > Block quote
 

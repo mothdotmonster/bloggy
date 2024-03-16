@@ -10,5 +10,5 @@ try it locally:
 ```
 git clone https://github.com/mothdotmonster/bloggy/ bloggy
 cd bloggy
-sudo caddy run
+caddy run
 ```

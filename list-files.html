@@ -1,0 +1,7 @@
+{{$files := (listFiles (index .Args 0))}}
+{{range $files}}
+<p>
+	<a href="/{{trimSuffix ".md" (first $files)}}">{{trimSuffix ".md" (first $files)}}</a>
+</p>
+{{$files = (rest $files)}}
+{{end}}
